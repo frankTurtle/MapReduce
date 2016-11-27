@@ -1,17 +1,18 @@
 import java.io.*;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Set;
 
 /**
  * Created by Barret J. Nobel on 11/26/2016.
  * Class to Map ALL THE THINGS!
- * Contains a HashMap with the key of the word
- * and the value is an array list with the number of occurrences within the document
+ * Contains an ArrayList full of HashMaps with the key of the word
+ * and the value an Integer with value 1
  * You're able to specify when the range that you'd like to scan within the File sent in
  */
 
 public class Mapper {
-    private HashMap< String, ArrayList<Integer> > mapperKeyValue;
+    private ArrayList< HashMap<String, Integer> > listOfKeyValuePairs;
     private int start;
     private int end;
     private File fileToProcess;
@@ -19,20 +20,20 @@ public class Mapper {
     // Constructor with parameters
     // Takes the File, starting line and ending line
     public Mapper( File fileToRead, int startReadingAtThisLine, int endAtThisLine ){
-        setMapperKeyValue( new HashMap<>() );
         setStart( startReadingAtThisLine );
         setEnd( endAtThisLine );
         setFileToProcess( fileToRead );
+        setListOfKeyValuePairs( new ArrayList<>() );
     }
 
-    // Method to get the HashMap containing the words and ArrayList of the count
-    public HashMap<String, ArrayList<Integer>> getMapperKeyValue() {
-        return mapperKeyValue;
+    // Method to return the ArrayList of key/value pairs
+    public ArrayList<HashMap<String, Integer>> getListOfKeyValuePairs() {
+        return listOfKeyValuePairs;
     }
 
-    // Method to set the HashMap
-    public void setMapperKeyValue(HashMap<String, ArrayList<Integer>> mapperKeyValue) {
-        this.mapperKeyValue = mapperKeyValue;
+    // Method tos et the ArrayList of key/value pairs
+    public void setListOfKeyValuePairs(ArrayList<HashMap<String, Integer>> listOfKeyValuePairs) {
+        this.listOfKeyValuePairs = listOfKeyValuePairs;
     }
 
     // Method to get the starting row
@@ -66,7 +67,7 @@ public class Mapper {
     }
 
     // Method to process the entire file
-    // loops through each row and calls the method processsLine that will actually has the values
+    // loops through each row and calls the method processLine that will actually has the values
     public void processFile(){
         FileInputStream fileInputStream = null;
 
@@ -86,18 +87,13 @@ public class Mapper {
     }
 
     // Method to process the line sent in
+    // adds each word to a new HashMap and adds to the ArrayList
     private void processLine( String lineToProcess ){
-
         for( String word : lineToProcess.split(" ") ){ //.................. loop through each line and split by spaces
-            word = makeTheWordPretty( word );
+            HashMap< String, Integer > addMe = new HashMap<>();
+            addMe.put( makeTheWordPretty(word), 1 );
 
-            ArrayList< Integer > current = ( mapperKeyValue.containsKey(word) )
-                    ? mapperKeyValue.get( word )
-                    : new ArrayList<>();
-
-            current.add( 1 );
-
-            mapperKeyValue.put( word, current );
+            listOfKeyValuePairs.add( addMe );
         }
     }
 

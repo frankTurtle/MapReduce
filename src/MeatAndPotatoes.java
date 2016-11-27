@@ -1,5 +1,5 @@
 import java.io.*;
-import java.util.Arrays;
+import java.util.*;
 
 /**
  * Created by Barret J. Nobel on 11/26/2016.
@@ -18,9 +18,31 @@ public class MeatAndPotatoes {
             Mapper map1 = new Mapper(new File("data2Line.txt"), 0, countLines("data2Line.txt"));
             map1.processFile();
 
-            for( String key : map1.getMapperKeyValue().keySet() ){
-                System.out.printf( "Value: %s -- Key: %s%n", Arrays.toString( map1.getMapperKeyValue().get(key).toArray() ), key );
-            }
+            Mapper map2 = new Mapper(new File("data3.txt"), 0, countLines("data3.txt"));
+            map2.processFile();
+
+//            System.out.println( map1.getListOfKeyValuePairs() );
+
+//            for (int a =0; a < map1.getListOfKeyValuePairs().size(); a++){
+//                HashMap<String, Integer> tmpData = (HashMap<String, Integer>) map1.getListOfKeyValuePairs().get(a);
+//                Set<String> key = tmpData.keySet();
+//                Iterator it = key.iterator();
+//
+//                while (it.hasNext()) {
+//                    String hmKey = (String)it.next();
+//                    Integer hmData = (Integer) tmpData.get(hmKey);
+//
+//                    System.out.println("Key: "+hmKey +" & Data: "+hmData);
+//                    it.remove(); // avoids a ConcurrentModificationException
+//                }
+//            }
+
+            ArrayList< Mapper > mappersList = new ArrayList<>();
+            mappersList.add( map1 );
+            mappersList.add( map2 );
+
+            SortAndShuffle sortAndShuffle = new SortAndShuffle( mappersList );
+            System.out.println( sortAndShuffle.getKeyValues().get("apple") );
         }
         catch ( IOException e ){ e.printStackTrace(); }
 
