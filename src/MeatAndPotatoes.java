@@ -21,7 +21,8 @@ public class MeatAndPotatoes {
             Mapper map2 = new Mapper(new File("data3.txt"), 0, countLines("data3.txt"));
             map2.processFile();
 
-//            System.out.println( map1.getListOfKeyValuePairs() );
+            Mapper map3 = new Mapper(new File("data.txt"), 0, countLines("data.txt"));
+            map3.processFile();
 
 //            for (int a =0; a < map1.getListOfKeyValuePairs().size(); a++){
 //                HashMap<String, Integer> tmpData = (HashMap<String, Integer>) map1.getListOfKeyValuePairs().get(a);
@@ -40,9 +41,18 @@ public class MeatAndPotatoes {
             ArrayList< Mapper > mappersList = new ArrayList<>();
             mappersList.add( map1 );
             mappersList.add( map2 );
+            mappersList.add( map3 );
 
             SortAndShuffle sortAndShuffle = new SortAndShuffle( mappersList );
-            System.out.println( sortAndShuffle.getKeyValues().get("apple") );
+            sortAndShuffle.populateData();
+
+            ArrayList< SortAndShuffle > shuffledLIst = new ArrayList<>();
+            shuffledLIst.add( sortAndShuffle );
+
+            Reducer reducer = new Reducer( shuffledLIst );
+            reducer.reduce();
+
+            System.out.println( reducer.getReducedList() );
         }
         catch ( IOException e ){ e.printStackTrace(); }
 
