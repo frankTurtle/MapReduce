@@ -11,3 +11,6 @@ Divide the input docs among the 3 Map tasks and intermediate output to 2 Reduce 
 You can verify your Part 2 output against the Part 1 output
 PRINT YOUR INPUT, INTERMEDIATE OUTPUT ( MAP TASK OUTPUT) AND FINAL OUTPUT
 IN PART ! AND PART  2.
+________________________________________________________________________________
+
+![alt tag](http://imgur.com/9NKPcnV.png)
