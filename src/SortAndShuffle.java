@@ -22,7 +22,7 @@ public class SortAndShuffle {
     // Method to do all the data processing
     // loops through each Mapper object and extracts the data
     // puts the extracted data into a Hash with the key's being put into another array after being sorted
-    public void populateData(){
+    public void sortAndShuffleData(){
         for( Mapper mapper : mappers ){ //............................................................ loop through each mapper object
             for (int i = 0; i < mapper.getListOfKeyValuePairs().size(); i++) { //..................... loop through each hash in the mapper
                 String key = (String)mapper.getListOfKeyValuePairs().get(i).keySet().toArray()[0]; //. get they key

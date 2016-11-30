@@ -8,54 +8,142 @@ import java.util.*;
 public class MeatAndPotatoes {
 
     public static void main( String[] args ){
-//        try {
-//            System.out.println( countLines("data.txt") );
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
-
         try {
-            Mapper map1 = new Mapper(new File("data2Line.txt"), 0, countLines("data2Line.txt"));
+            Mapper map1 = new Mapper(new File("data.txt"), 0, 66);
             map1.processFile();
 
-            Mapper map2 = new Mapper(new File("data3.txt"), 0, countLines("data3.txt"));
+            Mapper map2 = new Mapper(new File("data.txt"), 67, 133);
             map2.processFile();
 
-            Mapper map3 = new Mapper(new File("data.txt"), 0, countLines("data.txt"));
+            Mapper map3 = new Mapper(new File("data.txt"), 134, countLines("data.txt"));
             map3.processFile();
 
-//            for (int a =0; a < map1.getListOfKeyValuePairs().size(); a++){
-//                HashMap<String, Integer> tmpData = (HashMap<String, Integer>) map1.getListOfKeyValuePairs().get(a);
-//                Set<String> key = tmpData.keySet();
-//                Iterator it = key.iterator();
-//
-//                while (it.hasNext()) {
-//                    String hmKey = (String)it.next();
-//                    Integer hmData = (Integer) tmpData.get(hmKey);
-//
-//                    System.out.println("Key: "+hmKey +" & Data: "+hmData);
-//                    it.remove(); // avoids a ConcurrentModificationException
-//                }
-//            }
+            // For Reducer 1
+            ArrayList< Mapper > sort1 = new ArrayList<>();
+            sort1.add( map1 );
+            sort1.add( map2 );
 
-            ArrayList< Mapper > mappersList = new ArrayList<>();
-            mappersList.add( map1 );
-            mappersList.add( map2 );
-            mappersList.add( map3 );
+            SortAndShuffle sortAndShuffle = new SortAndShuffle( sort1 );
+            sortAndShuffle.sortAndShuffleData();
 
-            SortAndShuffle sortAndShuffle = new SortAndShuffle( mappersList );
-            sortAndShuffle.populateData();
+            ArrayList< SortAndShuffle > shuffle1 = new ArrayList<>();
+            shuffle1.add( sortAndShuffle );
 
-            ArrayList< SortAndShuffle > shuffledLIst = new ArrayList<>();
-            shuffledLIst.add( sortAndShuffle );
+            Reducer reducer1 = new Reducer( shuffle1 );
 
-            Reducer reducer = new Reducer( shuffledLIst );
-            reducer.reduce();
 
-            System.out.println( reducer.getReducedList() );
+
+            // For Reducer 2
+            ArrayList< Mapper > sort2 = new ArrayList<>();
+            sort2.add( map3 );
+
+            SortAndShuffle sortAndShuffle2 = new SortAndShuffle( sort2 );
+            sortAndShuffle2.sortAndShuffleData();
+
+            ArrayList< SortAndShuffle > shuffle2 = new ArrayList<>();
+            shuffle2.add( sortAndShuffle2 );
+
+            Reducer reducer2 = new Reducer( shuffle2 );
+
+
+
+            // REDUCE AND PRODUCE!
+            reducer1.reduce();
+            reducer2.reduce();
+
+//            printReducerOutput( reducer1, 1 );
+//            printReducerOutput( reducer2, 2 );
+
+
+
+
+
+            //************ SINGLE MAPPER / REDUCER ***************
+            Mapper map4 = new Mapper(new File("data.txt"), 0, countLines("data.txt"));
+            map4.processFile();
+
+            ArrayList< Mapper >mapper3 = new ArrayList<>();
+            mapper3.add( map4 );
+
+            printMapperOutput( mapper3 );
+
+            // For Reducer 2
+            ArrayList< Mapper > sort3 = new ArrayList<>();
+            sort3.add( map4 );
+
+            SortAndShuffle sortAndShuffle3 = new SortAndShuffle( sort3 );
+            sortAndShuffle3.sortAndShuffleData();
+
+            ArrayList< SortAndShuffle > shuffle3 = new ArrayList<>();
+            shuffle3.add( sortAndShuffle3 );
+
+            Reducer reducer3 = new Reducer( shuffle3 );
+
+            // REDUCE AND PRODUCE!
+            reducer3.reduce();
+
+//            printReducerOutput( reducer3, 1 );
         }
         catch ( IOException e ){ e.printStackTrace(); }
+    }
 
+    private static ArrayList< Mapper > splitUpIntoThisNumberOfMappers( int numberOfMappers, String fileName ){
+        ArrayList< Mapper > returnMe = new ArrayList<>();
+        File fileToRead = new File( fileName );
+
+        try {
+            int splitBy = countLines( fileName ) / numberOfMappers;
+
+            for( int i = 0; i < numberOfMappers; i++ ){
+                int start = ( i != 0 )
+                        ? i * splitBy + i
+                        : i * splitBy;
+
+                int end   = ( (start + splitBy) <= countLines(fileName) )
+                        ? start + splitBy
+                        : countLines(fileName);
+
+                Mapper addMe = new Mapper( fileToRead, start, end );
+                addMe.processFile();
+
+                returnMe.add( addMe );
+            }
+        }
+        catch (IOException e) { e.printStackTrace(); }
+
+        return returnMe;
+    }
+
+    private static void printMapperOutput( ArrayList< Mapper > mappers ){
+        int ct = 1;
+
+        for( Mapper mapper : mappers ){
+            if( mapper.getListOfKeyValuePairs().size() == 0 ) continue;
+
+            System.out.printf( "******MAPPER %d*******%n", ct++ );
+
+            for (int a = 0; a < mapper.getListOfKeyValuePairs().size(); a++){
+                HashMap<String, Integer> tmpData = (HashMap<String, Integer>) mapper.getListOfKeyValuePairs().get(a);
+                Set<String> key = tmpData.keySet();
+                Iterator it = key.iterator();
+
+                while (it.hasNext()) {
+                    String hmKey = (String)it.next();
+                    Integer hmData = (Integer) tmpData.get(hmKey);
+
+                    System.out.println("* Key: "+hmKey +" & Data: "+hmData);
+                    it.remove(); // avoids a ConcurrentModificationException
+                }
+            }
+
+            System.out.println( "******************************************\n\n" );
+        }
+    }
+
+    private static void printReducerOutput( Reducer reducer, int num ){
+        System.out.printf( "******REDUCER %d*******%n", num );
+        System.out.println( reducer.getReducedList() );
+        System.out.println( "******************************************\n\n" );
 
     }
 
