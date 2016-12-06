@@ -1,0 +1,130 @@
+Barret J. Nobel
+Multi-Map Output
+
+******MAPPER 1*******
+* Key: depart & Data: 1
+* Key: do & Data: 1
+* Key: be & Data: 1
+* Key: so & Data: 1
+* Key: he & Data: 1
+* Key: enough & Data: 1
+* Key: talent & Data: 1
+* Key: sociable & Data: 1
+* Key: formerly & Data: 1
+* Key: six & Data: 1
+* Key: but & Data: 1
+* Key: handsome & Data: 1
+* Key: up & Data: 1
+* Key: do & Data: 1
+* Key: view & Data: 1
+* Key: time & Data: 1
+* Key: they & Data: 1
+* Key: shot & Data: 1
+* Key: he & Data: 1
+* Key: concluded & Data: 1
+* Key: disposing & Data: 1
+* Key: provision & Data: 1
+       ......
+* Key: confined & Data: 1
+* Key: improved & Data: 1
+* Key: it & Data: 1
+* Key: he & Data: 1
+* Key: no & Data: 1
+* Key: doubtful & Data: 1
+* Key: raptures & Data: 1
+* Key: several & Data: 1
+* Key: carried & Data: 1
+* Key: through & Data: 1
+* Key: an & Data: 1
+* Key: of & Data: 1
+* Key: up & Data: 1
+* Key: attempt & Data: 1
+* Key: gravity & Data: 1
+* Key: situation & Data: 1
+* Key: to & Data: 1
+       ......
+* Key: rose & Data: 1
+* Key: more & Data: 1
+* Key: park & Data: 1
+* Key: way & Data: 1
+* Key: that & Data: 1
+* Key: an & Data: 1
+* Key: stairs & Data: 1
+* Key: as & Data: 1
+* Key: be & Data: 1
+* Key: lovers & Data: 1
+* Key: uneasy & Data: 1
+******************************************
+
+
+******MAPPER 2*******
+* Key: husbands & Data: 1
+* Key: ask & Data: 1
+* Key: repeated & Data: 1
+* Key: resolved & Data: 1
+* Key: but & Data: 1
+* Key: laughter & Data: 1
+* Key: debating & Data: 1
+* Key: she & Data: 1
+* Key: end & Data: 1
+* Key: cordial & Data: 1
+* Key: be & Data: 1
+* Key: at & Data: 1
+* Key: unable & Data: 1
+* Key: hardly & Data: 1
+        ......
+* Key: no & Data: 1
+* Key: talked & Data: 1
+* Key: on & Data: 1
+* Key: immediate & Data: 1
+* Key: him & Data: 1
+* Key: her & Data: 1
+* Key: resolving & Data: 1
+* Key: his & Data: 1
+* Key: favourite & Data: 1
+* Key: wished & Data: 1
+* Key: denote & Data: 1
+* Key: abroad & Data: 1
+* Key: at & Data: 1
+* Key: branch & Data: 1
+* Key: at & Data: 1
+******************************************
+
+
+******MAPPER 3*******
+* Key: situation & Data: 1
+* Key: admitting & Data: 1
+* Key: promotion & Data: 1
+* Key: at & Data: 1
+* Key: or & Data: 1
+* Key: to & Data: 1
+* Key: perceived & Data: 1
+* Key: be & Data: 1
+* Key: mr & Data: 1
+* Key: acuteness & Data: 1
+* Key: we & Data: 1
+      ......
+* Key: instrument & Data: 1
+* Key: bred & Data: 1
+* Key: do & Data: 1
+* Key: four & Data: 1
+* Key: so & Data: 1
+* Key: your & Data: 1
+* Key: felt & Data: 1
+* Key: with & Data: 1
+* Key: no & Data: 1
+* Key: shameless & Data: 1
+* Key: principle & Data: 1
+* Key: dependent & Data: 1
+* Key: household & Data: 1
+* Key: do & Data: 1
+******************************************
+
+
+
+******REDUCER 1*******
+[{ability=4}, {able=7}, {abode=4}, {about=1}, {above=5}, {abroad=6}, {absolute=3}, {acceptance=6}, {account=1}, {active=5}, {acuteness=5}, {adapted=5}, {add=27}, {added=1}, {addition=2}, {additions=5}, {adieus=4}, {admiration=13}, {admire=3}, {admitted=1}, {admitting=6}, {advanced=3}, {advantage=5}, {advantages=5}, {advice=4}, {affection=3}, {affixed=4}, {afford=6}, {affronting=4}, {afraid=7}, {after=7}, {again=4}, {against=2}, {age=19}, {agreeable=5}, {agreed=2}, {agreement=4}, {all=21}, {allow=3}, {allowance=5}, {almost=1}, {alone=7}, {alteration=10} ....... {bachelor=5}, {balls=5}, {barton=4}, {basket=4}, {be=54}, {because=2}, {become=4}, {bed=12}, {been=4}, {before=4}, {began=2}, {begin=3}, {behaved=3}, {behaviour=7}, {behind=3}, {being=2}, {believe=6}, {believed=5}, {believing=2}, {belonging=3}, {beloved=2}, {besides=2}, {betrayed=2}, {better=3}, {between=7}, {blessing=10}, {blind=4}, {blush=2}, {blushes=2}, {body=5}, {boisterous=13}, {books=2}, {bore=3}, {boy=14}, {branch=7}, {branched=3}, {brandon=2}, {breakfast=5}, {bred=6}, {breeding=5}, {bringing=3}, {brother=3}, {brought=1}, {building=7}, {built=1}, {burst=2}, {busy=9} ...... {estimable=7}, {estimating=13}, {even=3}, {evening=3}, {event=3}, {ever=3}, {every=1}, {everything=11}, {evident=6}, {evil=8}, {examine=4}, {excellence=10}, {excited=3}, {excuse=3}, {exercise=5}, {exertion=4}, {exeter=3}, {existence=6}, {expect=3}, {expense=5}, {expenses=5}, {explain=4}, {explained=2}, {exposed=3}, {express=4}, {expression=9}, {exquisite=12}, {extended=6}, {extensive=4}, {extent=2}, {extremely=1}, {extremity=8}, {eyes=3}, {face=7}, {fact=1}, {families=3}, {family=2}, {fancy=2}, {fanny=3}, {far=19}, {farther=1}, {fat=19}, {father=1}, {favour=8}, {favourable=12} ......  {promotion=2}, {pronounce=4}, {properly=2}, {property=7}, {proposal=2}, {propriety=5}, {prospect=4}, {prosperous=6}, {provided=8}, {provision=3}, {prudent=7}, {pulled=5}, {pure=4}, {purse=4}, {pursuit=3}, {put=20}, {questions=4}, {quick=5}, {quiet=1}, {quit=3}, {quitting=3}, {raillery=4}, {raising=4}, {rank=3}, {rapid=1}, {raptures=4}, {rapturous=10}, {rather=3}, {reached=1}, {read=1}, {ready=2}, {real=6}, {really=2}, {reasonable=6}, {reasonably=7}, {received=3}, {recommend=7}, {recurred=1}, {regard=2}, {regret=5}, {regular=4}, {rejoiced=3}, {related=5}, {relation=3}, {relied=2}, {remain=5}, {remainder=8}, {remark=1}, {remarkably=10}, {remember=7}, {removal=5}, {remove=3}, {removed=5}, {removing=4}, {rendered=2}, {rent=6}, {repair=1}, {repeated=7}, {replied=1}, {replying=2} ...... {will=2}, {winding=6}, {window=3}, {windows=1}, {winter=2}, {wisdom=3}, {wise=4}, {wish=2}, {wished=10}, {wishes=6}, {wishing=1}, {with=6}, {within=1}, {without=2}, {wonder=5}, {wondered=5}, {wooded=2}, {words=1}, {world=2}, {worse=6}, {worth=2}, {worthy=5}, {would=2}, {wound=5}, {written=7}, {wrong=5}, {wrote=5}, {ye=42}, {year=1}, {years=5}, {yet=38}, {you=38}, {young=2}, {your=2}, {yourself=7}, {zealously=8}]
+
+******REDUCER 2*******
+[{abode=4}, {about=1}, {above=6}, {abroad=1}, {absolute=4}, {acceptance=4}, {account=3}, {active=1}, {acuteness=4}, {adapted=2}, {add=11}, {added=1}, {addition=5}, {additions=1}, {address=4}, {adieus=2}, {admiration=2}, {admire=2}, {admitted=3}, {admitting=3}, {advanced=2}, {advantages=5}, {advice=3}, {affection=3}, {affixed=2}, {afford=1}, {affronting=4}, {afraid=1}, {after=1}, {again=1}, {against=2} ...... {bachelor=1}, {barton=1}, {basket=1}, {be=20}, {because=1}, {become=2}, {bed=15}, {been=1}, {before=1}, {begin=1}, {behaved=1}, {behaviour=5}, {behind=1}, {being=1}, {believe=4}, {believed=1}, {believing=4}, {belonging=4}, {besides=3}, {betrayed=1}, {better=2}, {between=3}, {beyond=2}, {blessing=2}, {blind=1}, {blush=2}, {boisterous=2}, {books=1}, {bore=2}, {both=2}, {boy=8}, {branch=2}, {branched=1}, {breakfast=3}, {bred=2}, {breeding=2}, {bringing=2}, {brother=2}, {brought=2}, {building=2}, {built=1}, {busy=2}, {but=25}, {by=27}, {call=2}, {called=2}, {calling=2}, {can=7}, {cannot=2} ...... {learning=4}, {leave=1}, {led=10}, {left=2}, {less=1}, {letter=1}, {life=2}, {like=5}, {likewise=6}, {limited=1}, {limits=2}, {linen=2}, {listening=4}, {literature=2}, {little=4}, {lively=2}, {living=2}, {long=2}, {looked=1}, {looking=2}, {lose=2}, {loud=2}, {love=3}, {lovers=2}, {luckily=2}, {made=3}, {make=1}, {man=6}, {manner=2}, {manners=2}, {manor=4}, {many=2}, {margaret=2}, {marianne=6}, {marriage=1}, {married=1} ...... {tastes=1}, {tears=1}, {tedious=2}, {tell=2}, {temper=5}, {ten=6}, {tended=2}, {terminated=5}, {than=3}, {that=1}, {the=14}, {their=6}, {themselves=4}, {there=2}, {therefore=3}, {these=1}, {they=5}, {thing=1}, {things=1}, {think=3}, {thirty=3}, {this=4}, {thoroughly=5}, {those=1}, {though=5}, {thought=2}, {three=2}, {through=1}, {throwing=1}, {thrown=1}, {till=2}, {time=1}, {timed=2}, {times=2}, {to=41}, {together=1}, {tolerably=4}, {too=9}, {tore=2}, {total=1}, {totally=3}, {towards=1}, {travelling=3}, {trees=2}, {trifling=2}, {true=2}, {truth=2}, {turned=2}, {twenty=2}, {two=12}, {unable=1}, {unaffected=4} ...... {whether=1}, {which=1}, {who=10}, {whole=3}, {wholly=1}, {whom=3}, {whose=3}, {why=6}, {wicket=3}, {wife=1}, {will=4}, {window=1}, {windows=1}, {winter=1}, {wisdom=1}, {wish=2}, {wished=3}, {wishes=1}, {wishing=2}, {with=3}, {within=2}, {without=2}, {witty=2}, {woman=2}, {wonder=1}, {wondered=3}, {words=1}, {world=2}, {worse=2}, {worth=1}, {worthy=2}, {would=2}, {wound=4}, {written=2}, {wrong=2}, {wrote=3}, {ye=19}, {years=1}, {yet=21}, {you=21}, {your=1}, {yourself=2}, {zealously=4}]
+******************************************

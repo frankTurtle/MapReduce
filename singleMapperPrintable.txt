@@ -1,0 +1,65 @@
+Barret J. Nobel
+Single Map Output
+
+******MAPPER 1*******
+* Key: depart & Data: 1
+* Key: do & Data: 1
+* Key: be & Data: 1
+* Key: so & Data: 1
+* Key: he & Data: 1
+* Key: enough & Data: 1
+* Key: talent & Data: 1
+* Key: sociable & Data: 1
+* Key: formerly & Data: 1
+* Key: six & Data: 1
+* Key: but & Data: 1
+* Key: handsome & Data: 1
+* Key: up & Data: 1
+* Key: do & Data: 1
+* Key: view & Data: 1
+* Key: time & Data: 1
+* Key: they & Data: 1
+* Key: shot & Data: 1
+* Key: he & Data: 1
+* Key: concluded & Data: 1
+       ......
+* Key: it & Data: 1
+* Key: he & Data: 1
+* Key: no & Data: 1
+* Key: doubtful & Data: 1
+* Key: raptures & Data: 1
+* Key: several & Data: 1
+* Key: carried & Data: 1
+* Key: through & Data: 1
+* Key: an & Data: 1
+* Key: of & Data: 1
+* Key: up & Data: 1
+* Key: attempt & Data: 1
+* Key: gravity & Data: 1
+* Key: situation & Data: 1
+* Key: to & Data: 1
+* Key: be & Data: 1
+* Key: at & Data: 1
+* Key: offending & Data: 1
+         ......
+* Key: their & Data: 1
+* Key: she & Data: 1
+* Key: you & Data: 1
+* Key: now & Data: 1
+* Key: above & Data: 1
+* Key: going & Data: 1
+* Key: stand & Data: 1
+* Key: forth & Data: 1
+* Key: he & Data: 1
+* Key: pretty & Data: 1
+* Key: future & Data: 1
+* Key: shameless & Data: 1
+* Key: principle & Data: 1
+* Key: dependent & Data: 1
+* Key: household & Data: 1
+* Key: do & Data: 1
+******************************************
+
+
+******REDUCER 1*******
+[{ability=4}, {able=7}, {abode=8}, {about=2}, {above=11}, {abroad=7}, {absolute=7}, {acceptance=10}, {account=4}, {active=6}, {acuteness=9}, {adapted=8}, {add=38}, {added=2}, {addition=7}, {additions=6}, {address=4}, {adieus=6}, {admiration=15}, {admire=5}, {admitted=4}, {admitting=9}, {advanced=5}, {advantage=5}, {advantages=10}, {advice=7}, {affection=6}, {affixed=7}, {afford=7}, {affronting=8}, {afraid=8}, {after=8}, {again=5}, {against=4}, {age=25}, {agreeable=8}, {agreed=4}, {agreement=8}, {all=28}, {allow=6}, {allowance=9}, {almost=1}, {alone=7}, {along=1}, {alteration=14}, {although=4}, {always=2}, {am=51}, {amiable=5}, {among=6}, {amounted=3}, {ample=5}, {an=131}, {and=68}, {announcing=9}, {another=3}, {answer=4}, {answered=10}, {anxious=2}, {any=33}, {apartments=11}, {appear=9}, {appearance=9}, {appetite=6}, {applauded=4}, ...... {either=8}, {elderly=5}, {eldest=1}, {elegance=6}, {elinor=8}, {elsewhere=8}, {enable=9}, {enabled=5}, {end=31}, {endeavor=3}, {engage=4}, {engaged=3}, {engrossed=6}, {enjoy=6}, {enjoyed=7}, {enjoyment=9}, {enough=8}, {enquire=8}, {entered=8}, {entire=6}, {entirely=1}, {entrance=12}, {entreaties=14}, {equal=4}, {equally=6}, {especially=10}, {estate=5}, {esteem=12}, {esteems=5}, {estimable=13}, {estimating=23}, {even=3}, {evening=4}, {event=3}, {ever=4}, {every=1}, {everything=15}, {evident=6}, {evil=11}, {examine=4}, {excellence=16}, {excellent=3}, {excited=5}, {excuse=8}, {exercise=10}, {exertion=6}, {exeter=3}, {existence=11}, {expect=4} ...... {talked=5}, {talking=4}, {tall=5}, {taste=5}, {tastes=5}, {tears=5}, {tedious=5}, {tell=4}, {temper=8}, {ten=28}, {tended=4}, {terminated=18}, {terms=1}, {than=4}, {that=8}, {the=64}, {their=14}, {them=3}, {themselves=12}, {then=2}, {there=5}, {therefore=7}, {these=14}, {they=19}, {thing=1}, {things=5}, {think=9}, {thirty=4}, {this=8}, {thoroughly=8}, {those=3}, {though=12}, {thought=3}, {thoughts=2}, {three=6}, {through=6}, {throwing=4} ...... {wholly=3}, {whom=7}, {whose=11}, {why=27}, {wicket=4}, {widen=2}, {widow=2}, {wife=4}, {will=6}, {winding=6}, {window=4}, {windows=2}, {winter=3}, {wisdom=4}, {wise=4}, {wish=4}, {wished=13}, {wishes=7}, {wishing=3}, {with=9}, {within=3}, {without=4}, {witty=2}, {woman=2}, {wonder=6}, {wondered=8}, {wooded=2}, {words=2}, {world=4}, {worse=8}, {worth=3}, {worthy=7}, {would=4}, {wound=9}, {written=9}, {wrong=7}, {wrote=8}, {ye=61}, {year=1}, {years=6}, {yet=61}, {you=59}, {young=2}, {your=3}, {yourself=9}, {zealously=12}]
